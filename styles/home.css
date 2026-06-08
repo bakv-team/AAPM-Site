@@ -84,13 +84,14 @@ img {
 }
 
 .brand {
-    color: var(--senai-blue);
-    font-family: "Montserrat", Arial, sans-serif;
-    font-size: clamp(1.45rem, 3vw, 2rem);
-    font-style: italic;
-    font-weight: 800;
-    letter-spacing: 0;
-    text-shadow: 0 8px 22px rgba(0, 109, 255, 0.18);
+    display: inline-flex;
+    align-items: center;
+}
+
+.brand img {
+    width: clamp(11.5rem, 22vw, 17rem);
+    max-height: 90px;
+    object-fit: contain;
 }
 
 .main-nav {
@@ -276,6 +277,8 @@ img {
 }
 
 .primary-cta {
+    position: relative;
+    overflow: hidden;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -285,10 +288,29 @@ img {
     font-weight: 800;
     background: linear-gradient(135deg, #ff9146, var(--orange-dark));
     border: 0;
-    border-radius: 8px;
+    border-radius: 30px;
     box-shadow: 0 16px 30px rgba(240, 90, 0, 0.34);
     cursor: pointer;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.primary-cta::before,
+.tab-btn::before {
+    content: "";
+    position: absolute;
+    top: -55%;
+    bottom: -55%;
+    left: -55%;
+    width: 42%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.68), transparent);
+    transform: translateX(-120%) skewX(-24deg);
+    transition: transform 0.65s ease;
+    pointer-events: none;
+}
+
+.primary-cta:hover::before,
+.tab-btn:hover::before {
+    transform: translateX(440%) skewX(-24deg);
 }
 
 .primary-cta:hover {
@@ -769,6 +791,41 @@ section {
 
 .footer strong {
     color: var(--white);
+}
+
+.hero-media,
+.stats-panel,
+.section-title img,
+.focus-card,
+.benefit-card,
+.project-tabs,
+.tab-buttons,
+.tab-panel,
+.join-card {
+    border-radius: 30px;
+}
+
+.hero-media,
+.focus-card,
+.benefit-card,
+.project-tabs,
+.tab-panel {
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.78), rgba(221, 236, 255, 0.48));
+    border: 1px solid rgba(255, 255, 255, 0.82);
+    backdrop-filter: blur(18px) saturate(150%);
+    -webkit-backdrop-filter: blur(18px) saturate(150%);
+}
+
+.hero-media img,
+.benefit-card img,
+.section-title img {
+    border-radius: 24px;
+}
+
+.tab-btn {
+    position: relative;
+    overflow: hidden;
+    border-radius: 30px;
 }
 
 .reveal {
