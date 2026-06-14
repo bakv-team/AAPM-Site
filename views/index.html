@@ -1,161 +1,152 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AAPM | SENAI Francisco Matarazzo</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="/styles/home.css">
-    <script src="https://unpkg.com/lucide@latest" defer></script>
-    <script src="/script/home.js" defer></script>
-</head>
-
-<body>
-    <header class="topbar">
-        <a class="brand" href="/views/home.html" aria-label="Página inicial AAPM Francisco Matarazzo">
-            <img src="/img/banner_aapm.png" alt="AAPM Francisco Matarazzo">
-        </a>
-
-        <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">
-            <i data-lucide="menu"></i>
-        </button>
-
-        <nav class="main-nav" aria-label="Navegação principal">
-            <a class="nav-link is-active" href="/views/home.html">Início</a>
-            <a class="nav-link" href="/views/associacao.html">Associação</a>
-            <a class="nav-link" href="/views/faq.html">Dúvidas Frequentes</a>
-        </nav>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0A1738" />
+    <meta name="description" content="Site publico da AAPM SENAI Francisco Matarazzo." />
+    <title>AAPM SENAI - Inicio</title>
+    <link rel="icon" type="image/png" href="/apps/pvd/assets/icones/logosemtexto.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/apps/site/styles/site.css" />
+  </head>
+  <body>
+    <header class="site-header" data-site-header>
+      <a class="brand" href="./index.html" aria-label="AAPM SENAI inicio">
+        <img src="/apps/pvd/assets/icones/logosemtexto.png" alt="" />
+        <span><strong>AAPM</strong><small>SENAI - FM</small></span>
+      </a>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-label="Abrir menu"><i class="fa-solid fa-bars"></i></button>
+      <nav class="site-nav" data-site-nav>
+        <a class="active" href="./index.html">Inicio</a>
+        <a href="./servicos.html">Servicos</a>
+        <a href="./associados.html">Associados</a>
+        <a href="./duvidas.html">Duvidas</a>
+      </nav>
     </header>
 
     <main>
-        <section class="hero" id="inicio-topo">
-            <div class="shape shape-orange"></div>
-            <div class="shape shape-blue"></div>
-            <div class="hero-copy reveal">
-                <p class="eyebrow">Associação de Alunos, Pais e Mestres</p>
-                <h1>AAPM</h1>
-                <h2>SENAI Francisco Matarazzo</h2>
-                <p>Venha fazer parte da nossa associação de pais, alunos e mestres. Juntos, podemos transformar a
-                    educação e fortalecer a comunidade escolar.</p>
-                <a class="primary-cta" href="/views/associacao.html">Seja um Associado</a>
-            </div>
+      <section class="hero">
+        <div class="hero-media" aria-hidden="true">
+          <img src="/apps/pvd/assets/fotos/fundosite1.png" alt="" />
+        </div>
+        <div class="hero-content">
+          <span class="eyebrow"><i class="fa-solid fa-school"></i> Associacao de apoio estudantil</span>
+          <h1>AAPM SENAI Francisco Matarazzo</h1>
+          <p>Uma ponte entre estudantes, escola e comunidade, fortalecendo atendimento, acolhimento e acesso a itens essenciais para a rotina escolar.</p>
+          <div class="hero-actions">
+            <a class="primary-link" href="./servicos.html"><i class="fa-solid fa-hand-holding-heart"></i><span>Ver servicos</span></a>
+            <a class="secondary-link" href="./duvidas.html"><i class="fa-solid fa-circle-question"></i><span>Tirar duvidas</span></a>
+          </div>
+        </div>
+        <div class="hero-orbit" aria-hidden="true">
+          <span class="orbit-spark spark-a"></span>
+          <span class="orbit-spark spark-b"></span>
+          <span class="orbit-spark spark-c"></span>
+          <div class="orbit-card card-a">
+            <i class="fa-solid fa-couch"></i>
+            <strong>Conforto</strong>
+            <span>armários, itens e rotina mais leve</span>
+          </div>
+          <div class="orbit-card card-b">
+            <i class="fa-solid fa-shield-heart"></i>
+            <strong>Segurança</strong>
+            <span>apoio responsável em cada entrega</span>
+          </div>
+          <div class="orbit-card card-c">
+            <i class="fa-solid fa-hand-holding-heart"></i>
+            <strong>Apoio</strong>
+            <span>acordos, orientação e acolhimento</span>
+          </div>
+        </div>
+      </section>
 
-            <div class="hero-media reveal">
-                <img src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=1100&q=85"
-                    alt="Profissional trabalhando com moda, tecidos e criação têxtil">
-            </div>
+      <section class="section intro-grid">
+        <article class="intro-copy">
+          <span class="eyebrow"><i class="fa-solid fa-people-group"></i> Sobre a AAPM</span>
+          <h2>Organizacao, suporte e proximidade com quem vive a escola todos os dias.</h2>
+          <p>A AAPM atua para facilitar a vida estudantil, apoiar necessidades do cotidiano e manter uma operacao transparente para alunos, responsaveis e equipe escolar.</p>
+        </article>
+        <div class="stats-row">
+          <div><b class="stat-mark mark-flow"><em></em></b><small>01</small><strong>Atendimento</strong><span>rotina escolar</span></div>
+          <div><b class="stat-mark mark-grid"><em></em></b><small>02</small><strong>Produtos</strong><span>materiais, itens e muito mais</span></div>
+          <div><b class="stat-mark mark-pulse"><em></em></b><small>03</small><strong>Apoio</strong><span>acordos e orientacao</span></div>
+        </div>
+      </section>
 
-            <div class="stats-panel reveal" aria-label="Números da AAPM">
-                <article>
-                    <strong><span data-counter="10">0</span>k</strong>
-                    <span>Associados</span>
-                </article>
-                <article>
-                    <strong>+<span data-counter="5">0</span>k</strong>
-                    <span>Ações Realizadas</span>
-                </article>
-                <article>
-                    <strong><span data-counter="25">0</span>+</strong>
-                    <span>Anos de Atuação</span>
-                </article>
-            </div>
-        </section>
+      <section class="word-carousel-band" aria-label="Valores da AAPM">
+        <div class="word-carousel-window">
+          <div class="word-carousel-track">
+            <span><i class="fa-solid fa-hand-holding-heart"></i> Apoio</span>
+            <span><i class="fa-solid fa-shield-heart"></i> Segurança</span>
+            <span><i class="fa-solid fa-couch"></i> Conforto</span>
+            <span><i class="fa-solid fa-people-group"></i> Comunidade</span>
+            <span><i class="fa-solid fa-bolt"></i> Agilidade</span>
+            <span><i class="fa-solid fa-check-double"></i> Transparência</span>
+            <span><i class="fa-solid fa-hand-holding-heart"></i> Apoio</span>
+            <span><i class="fa-solid fa-shield-heart"></i> Segurança</span>
+            <span><i class="fa-solid fa-couch"></i> Conforto</span>
+            <span><i class="fa-solid fa-people-group"></i> Comunidade</span>
+            <span><i class="fa-solid fa-bolt"></i> Agilidade</span>
+            <span><i class="fa-solid fa-check-double"></i> Transparência</span>
+          </div>
+        </div>
+      </section>
 
-        <section class="about section-grid" id="sobre">
-            <div class="section-title reveal">
-                <h2>Conheça a nossa Associação</h2>
-                <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=900&q=85"
-                    alt="Tela com código em aula de análise e desenvolvimento de sistemas">
-            </div>
+      <section class="section carousel-section">
+        <div class="section-head">
+          <span class="eyebrow"><i class="fa-solid fa-images"></i> Experiencia AAPM</span>
+          <h2>Um espaco pensado para atender com agilidade.</h2>
+        </div>
+        <div class="carousel" data-carousel>
+          <button class="carousel-btn prev" type="button" data-carousel-prev aria-label="Imagem anterior"><i class="fa-solid fa-chevron-left"></i></button>
+          <div class="carousel-track">
+            <article class="carousel-slide active">
+              <img src="/apps/pvd/assets/fundos/fundo1.png" alt="Ambiente moderno da AAPM" />
+              <div><strong>Atendimento no intervalo</strong><span>Organizacao para compras rapidas e acompanhamento do aluno.</span></div>
+            </article>
+            <article class="carousel-slide">
+              <img src="/apps/pvd/assets/fundos/fundo2.png" alt="Produtos e materiais escolares" />
+              <div><strong>Itens essenciais</strong><span>Materiais, uniformes e acessorios para apoiar a rotina de aula.</span></div>
+            </article>
+            <article class="carousel-slide">
+              <img src="/apps/pvd/assets/fundos/fundo3.png" alt="Operacao conectada da AAPM" />
+              <div><strong>Gestao conectada</strong><span>Pedidos, estoque e historico centralizados para mais transparencia.</span></div>
+            </article>
+          </div>
+          <button class="carousel-btn next" type="button" data-carousel-next aria-label="Proxima imagem"><i class="fa-solid fa-chevron-right"></i></button>
+          <div class="carousel-dots" data-carousel-dots></div>
+        </div>
+      </section>
 
-            <div class="about-copy reveal">
-                <h2>Construindo o Futuro <span>com Educação e Parceria</span></h2>
-                <p>A AAPM do SENAI Francisco Matarazzo é a Associação de Pais e Mestres dedicada a apoiar nossos alunos
-                    e promover iniciativas que beneficiam toda a comunidade escolar.</p>
-                <ul>
-                    <li><i data-lucide="check"></i> Apoio aos alunos e mestres</li>
-                    <li><i data-lucide="check"></i> Projetos educacionais inovadores</li>
-                    <li><i data-lucide="check"></i> Eventos e atividades comunitárias</li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="focus-areas" id="areas">
-            <div class="center-title reveal">
-                <h2>Onde a AAPM pode fazer diferença</h2>
-                <p>A associação atua como ponte entre a escola, as famílias e os projetos que ajudam os alunos a viver
-                    experiências mais completas no SENAI.</p>
-            </div>
-
-            <div class="focus-grid">
-                <article class="focus-card reveal">
-                    <i data-lucide="shirt"></i>
-                    <h3>Têxtil e Moda</h3>
-                    <p>Apoio a ações, materiais e experiências ligadas à criação, confecção, design, produção e cultura
-                        de moda.</p>
-                </article>
-
-                <article class="focus-card reveal">
-                    <i data-lucide="code-2"></i>
-                    <h3>Tecnologia e ADS</h3>
-                    <p>Incentivo a projetos com programação, análise de sistemas, prototipagem, oficinas e soluções
-                        digitais.</p>
-                </article>
-
-                <article class="focus-card reveal">
-                    <i data-lucide="briefcase-business"></i>
-                    <h3>Carreira e Comunidade</h3>
-                    <p>Organização de atividades que aproximam estudantes, responsáveis, docentes e parceiros do mundo
-                        do trabalho.</p>
-                </article>
-            </div>
-        </section>
-
-
-        <section class="projects" id="projetos">
-            <div class="projects-copy reveal">
-                <h2>Iniciativas que aproximam escola, famílias e indústria</h2>
-                <p>A associação colabora para que cada estudante encontre mais recursos, oportunidades e pertencimento
-                    dentro do SENAI Francisco Matarazzo.</p>
-            </div>
-
-            <div class="project-tabs reveal" aria-label="Projetos da AAPM">
-                <div class="tab-buttons" role="tablist">
-                    <button class="tab-btn is-active" type="button" role="tab" data-tab="eventos">Eventos</button>
-                    <button class="tab-btn" type="button" role="tab" data-tab="bolsas">Apoio</button>
-                    <button class="tab-btn" type="button" role="tab" data-tab="laboratorios">Laboratórios</button>
-                </div>
-                <article class="tab-panel is-active" id="eventos" role="tabpanel">
-                    <i data-lucide="calendar-days"></i>
-                    <h3>Eventos comunitários</h3>
-                    <p>Organização de encontros, palestras e ações que conectam alunos, responsáveis, docentes e
-                        parceiros.</p>
-                </article>
-                <article class="tab-panel" id="bolsas" role="tabpanel">
-                    <i data-lucide="graduation-cap"></i>
-                    <h3>Apoio estudantil</h3>
-                    <p>Auxílio em materiais e iniciativas que reduzem barreiras para a permanência e o desenvolvimento
-                        dos estudantes.</p>
-                </article>
-                <article class="tab-panel" id="laboratorios" role="tabpanel">
-                    <i data-lucide="cpu"></i>
-                    <h3>Ambientes de aprendizagem</h3>
-                    <p>Contribuição para melhorias em espaços, equipamentos e atividades práticas alinhadas ao ensino
-                        técnico.</p>
-                </article>
-            </div>
-        </section>
+      <section class="section feature-band">
+        <div class="feature-3d" aria-hidden="true">
+          <div class="cube">
+            <span class="face front"><i class="fa-solid fa-receipt"></i></span>
+            <span class="face back"><i class="fa-solid fa-boxes-stacked"></i></span>
+            <span class="face left"><i class="fa-solid fa-tags"></i></span>
+            <span class="face right"><i class="fa-solid fa-users"></i></span>
+            <span class="face top"><i class="fa-solid fa-chart-line"></i></span>
+            <span class="face bottom"><i class="fa-solid fa-shield-heart"></i></span>
+          </div>
+        </div>
+        <div>
+          <span class="eyebrow"><i class="fa-solid fa-sparkles"></i> Modernidade com proposito</span>
+          <h2>Um site publico para apresentar a AAPM com a mesma identidade do sistema administrativo.</h2>
+          <p>O visual combina vidro, profundidade, movimento e informacao clara, mantendo a linguagem do dashboard e do ponto de venda.</p>
+        </div>
+      </section>
     </main>
 
-    <footer class="footer" id="contato">
-        <strong>AAPM SENAI Francisco Matarazzo</strong>
-        <span>Educação, parceria e comunidade em movimento.</span>
+    <footer class="site-footer">
+      <img src="/apps/pvd/assets/icones/logosemtexto.png" alt="" />
+      <div><strong>AAPM SENAI Francisco Matarazzo</strong><span>Site amostral publico</span></div>
+      <a href="./duvidas.html">Fale com a AAPM</a>
     </footer>
-</body>
 
+    <script src="/apps/site/scripts/site.js"></script>
+  </body>
 </html>
