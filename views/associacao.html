@@ -1,170 +1,97 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AAPM | SENAI Francisco Matarazzo</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="/styles/associacao.css">
-    <script src="https://unpkg.com/lucide@latest" defer></script>
-    <script src="/script/home.js" defer></script>
-</head>
-
-<body>
-    <header class="topbar">
-        <a class="brand" href="/views/home.html" aria-label="Página inicial AAPM Francisco Matarazzo">
-            <img src="/img/banner_aapm.png" alt="AAPM Francisco Matarazzo">
-        </a>
-
-        <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">
-            <i data-lucide="menu"></i>
-        </button>
-
-        <nav class="main-nav" aria-label="Navegação principal">
-            <a class="nav-link" href="/views/home.html">Início</a>
-            <a class="nav-link is-active" href="/views/associacao.html">Associação</a>
-            <a class="nav-link" href="/views/faq.html">Dúvidas Frequentes</a>
-        </nav>
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0A1738" />
+    <meta name="description" content="Associados da AAPM SENAI Francisco Matarazzo e seus beneficios." />
+    <title>AAPM SENAI - Associados</title>
+    <link rel="icon" type="image/png" href="/apps/pvd/assets/icones/logosemtexto.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/apps/site/styles/site.css" />
+  </head>
+  <body>
+    <header class="site-header" data-site-header>
+      <a class="brand" href="./index.html" aria-label="AAPM SENAI inicio">
+        <img src="/apps/pvd/assets/icones/logosemtexto.png" alt="" />
+        <span><strong>AAPM</strong><small>SENAI - FM</small></span>
+      </a>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-label="Abrir menu"><i class="fa-solid fa-bars"></i></button>
+      <nav class="site-nav" data-site-nav>
+        <a href="./index.html">Inicio</a>
+        <a href="./servicos.html">Servicos</a>
+        <a class="active" href="./associados.html">Associados</a>
+        <a href="./duvidas.html">Duvidas</a>
+      </nav>
     </header>
 
     <main>
-        <section class="association-hero">
-            <div class="hero-copy reveal">
-                <p class="eyebrow">AAPM Francisco Matarazzo</p>
-                <h1>Participar da associação é fortalecer a escola.</h1>
-                <p>A AAPM aproxima famílias, alunos, mestres e parceiros em ações que geram oportunidades, apoio
-                    educacional e experiências para toda a comunidade SENAI.</p>
-                <a class="primary-cta" href="#associe-se">Quero me associar</a>
-            </div>
+      <section class="page-hero compact associate-hero">
+        <span class="eyebrow"><i class="fa-solid fa-id-card"></i> Associados AAPM</span>
+        <h1>Ser associado e participar de uma rede de apoio para a rotina escolar.</h1>
+        <p>A assinatura de associado ajuda a fortalecer a AAPM e pode liberar beneficios definidos pela unidade, como descontos, prioridade em campanhas e acompanhamento mais organizado no atendimento.</p>
+      </section>
 
-            <div class="hero-panel reveal">
-                <i data-lucide="users-round"></i>
-                <strong>Comunidade ativa</strong>
-                <span>Projetos, eventos, apoio estudantil e integração com o mundo do trabalho.</span>
-            </div>
-        </section>
+      <section class="section associate-panel">
+        <article class="intro-copy">
+          <span class="eyebrow"><i class="fa-solid fa-circle-info"></i> O que significa</span>
+          <h2>Uma contribuicao que volta para a comunidade.</h2>
+          <p>O associado mantem um vinculo ativo com a AAPM. Esse cadastro facilita a identificacao no atendimento, ajuda na organizacao das compras recorrentes e apoia a manutencao de acoes voltadas aos alunos.</p>
+          <a class="primary-link" href="./servicos.html"><i class="fa-solid fa-hand-holding-heart"></i><span>Conhecer servicos</span></a>
+        </article>
 
-        <section class="benefits" id="beneficios">
-            <div class="center-title reveal">
-                <h2>Benefícios de ser um Associado</h2>
-            </div>
+        <aside class="associate-pass tilt-card">
+          <span>AAPM</span>
+          <strong>Associado ativo</strong>
+          <small>SENAI Francisco Matarazzo</small>
+          <div>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-percent"></i>
+            <i class="fa-solid fa-heart"></i>
+          </div>
+        </aside>
+      </section>
 
-            <div class="benefit-grid">
-                <article class="benefit-card reveal">
-                    <img src="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=700&q=85"
-                        alt="Peças de roupa em arara de moda e confecção têxtil">
-                    <div>
-                        <h3><span>Descontos</span> Exclusivos</h3>
-                        <p>Associados têm acesso a descontos em cursos, materiais, produtos do SENAI e parcerias locais.
-                        </p>
-                    </div>
-                </article>
+      <section class="section services-grid">
+        <article class="service-card tilt-card">
+          <i class="fa-solid fa-tags"></i>
+          <h2>Beneficios em compras</h2>
+          <p>Associados podem ter descontos ou condicoes especiais conforme as regras vigentes da AAPM.</p>
+        </article>
+        <article class="service-card tilt-card">
+          <i class="fa-solid fa-clock"></i>
+          <h2>Atendimento mais agil</h2>
+          <p>O cadastro facilita identificar o aluno, historico e necessidades mais comuns no balcao.</p>
+        </article>
+        <article class="service-card tilt-card">
+          <i class="fa-solid fa-people-roof"></i>
+          <h2>Apoio coletivo</h2>
+          <p>A contribuicao ajuda a sustentar iniciativas que beneficiam a comunidade escolar ao longo do ano.</p>
+        </article>
+      </section>
 
-                <article class="benefit-card is-featured reveal">
-                    <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=700&q=85"
-                        alt="Estudantes colaborando em projeto de tecnologia com notebooks">
-                    <div>
-                        <h3><i data-lucide="network"></i> Rede de Networking</h3>
-                        <p>Participação em eventos, ampliando sua rede de contatos e criando oportunidades para o
-                            futuro.</p>
-                    </div>
-                </article>
-
-                <article class="benefit-card reveal" id="apoio">
-                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=700&q=85"
-                        alt="Componentes eletrônicos e tecnologia para projetos educacionais">
-                    <div>
-                        <h3><i data-lucide="handshake"></i> Apoio a Projetos Educacionais</h3>
-                        <p>Investimento em projetos, feiras, visitas técnicas e ações que conectam aprendizagem,
-                            indústria e cidadania.</p>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <section class="process-section" id="como-funciona">
-            <div class="process-intro reveal">
-                <p class="eyebrow">Como funciona</p>
-                <h2>Participar é simples e ajuda a transformar ideias em ações.</h2>
-                <p>A AAPM reúne contribuições, sugestões e participação da comunidade para apoiar projetos educacionais,
-                    eventos e melhorias que fazem sentido para os alunos.</p>
-            </div>
-
-            <div class="process-grid">
-                <article class="process-card reveal">
-                    <span>01</span>
-                    <h3>Demonstre interesse</h3>
-                    <p>Preencha o formulário ou fale com a escola para receber orientações sobre participação e
-                        contribuição.</p>
-                </article>
-
-                <article class="process-card reveal">
-                    <span>02</span>
-                    <h3>Acompanhe as ações</h3>
-                    <p>Fique por dentro dos projetos, eventos e iniciativas apoiadas pela associação ao longo do período
-                        letivo.</p>
-                </article>
-
-                <article class="process-card reveal">
-                    <span>03</span>
-                    <h3>Contribua com ideias</h3>
-                    <p>Responsáveis, alunos e mestres podem sugerir ações ligadas a moda, tecnologia, convivência e
-                        formação profissional.</p>
-                </article>
-            </div>
-
-            <div class="transparency-box reveal">
-                <i data-lucide="clipboard-check"></i>
-                <div>
-                    <h3>Compromisso com transparência</h3>
-                    <p>As iniciativas da AAPM devem priorizar necessidades reais da comunidade escolar, uso responsável
-                        dos recursos e comunicação clara com os associados.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="join" id="associe-se">
-            <div class="join-card reveal">
-                <div>
-                    <h2>Faça parte da AAPM</h2>
-                    <p>Preencha seus dados de interesse e a equipe da associação entrará em contato para orientar os
-                        próximos passos.</p>
-                </div>
-                <form class="join-form" id="joinForm">
-                    <label>
-                        Nome
-                        <input type="text" name="nome" placeholder="Seu nome completo" required>
-                    </label>
-                    <label>
-                        Perfil
-                        <select name="perfil" required>
-                            <option value="">Selecione</option>
-                            <option>Aluno</option>
-                            <option>Responsável</option>
-                            <option>Docente</option>
-                            <option>Parceiro</option>
-                        </select>
-                    </label>
-                    <label>
-                        E-mail
-                        <input type="email" name="email" placeholder="voce@email.com" required>
-                    </label>
-                    <button class="primary-cta" type="submit">Enviar Interesse</button>
-                    <p class="form-message" aria-live="polite"></p>
-                </form>
-            </div>
-        </section>
+      <section class="section process-panel">
+        <div class="section-head">
+          <span class="eyebrow"><i class="fa-solid fa-list-check"></i> Como aderir</span>
+          <h2>Assinatura simples, controle claro e beneficios acompanhados pela equipe.</h2>
+        </div>
+        <div class="process-steps">
+          <div><span>01</span><strong>Cadastro</strong><p>O aluno ou responsavel informa os dados para vinculacao como associado.</p></div>
+          <div><span>02</span><strong>Ativacao</strong><p>A equipe confirma a assinatura e deixa o status ativo no atendimento.</p></div>
+          <div><span>03</span><strong>Uso</strong><p>Nas compras, o associado e identificado para aplicar beneficios permitidos.</p></div>
+        </div>
+      </section>
     </main>
 
-    <footer class="footer" id="contato">
-        <strong>AAPM SENAI Francisco Matarazzo</strong>
-        <span>Educação, parceria e comunidade em movimento.</span>
+    <footer class="site-footer">
+      <img src="/apps/pvd/assets/icones/logosemtexto.png" alt="" />
+      <div><strong>AAPM SENAI Francisco Matarazzo</strong><span>Associados e beneficios</span></div>
+      <a href="./duvidas.html">Tirar duvidas</a>
     </footer>
-</body>
 
+    <script src="/apps/site/scripts/site.js"></script>
+  </body>
 </html>
