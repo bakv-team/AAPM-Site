@@ -1,6 +1,6 @@
 # AAPM Site
 
-Site publico amostral da AAPM SENAI Francisco Matarazzo.
+Site público amostral da AAPM SENAI Francisco Matarazzo.
 
 ## Paginas
 
